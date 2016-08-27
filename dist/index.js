@@ -21,3 +21,4 @@ var RobotGun = (function () {
 var meat = new Robot("plz daddy not the whip");
 meat.say();
 meat.shoot(new RobotGun(50, "cats"));
+console.log("whereamI");
