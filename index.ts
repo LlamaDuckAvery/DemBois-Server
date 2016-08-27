@@ -1,5 +1,8 @@
 class Calculator {
-    numbers: number[];
+    numberone: number;
+    numbertwo: number;
+    constructor (){
+    }
     public add(numbers, sum){
         return numbers[0] + numbers[1];
     }
@@ -14,4 +17,7 @@ class Calculator {
     public divide(numbers, quotient){
         return numbers[0] / numbers[1];
     }
+    
 }
+
+var calculate = new Calculator();
