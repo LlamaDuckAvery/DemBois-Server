@@ -1,30 +1,18 @@
-interface Gun {
-    bullets: number;
-    type?: "auto" | "cats"
-}
-
-class Robot {
-    greeting: string;
-    constructor (greet: string) {
-        this.greeting = greet;
+class Calculator {
+    numbers: number[];
+    public add(numbers, sum){
+        return numbers[0] + numbers[1];
+        
     }
+    public subtract(numbers, difference){
+        return numbers[0] - numbers[1];
 
-    public say() {
-        console.log(this.greeting);
     }
+    public multiply(numbers, product){
+        return numbers[0] * numbers[1];
 
-    public shoot(gun: Gun) {
-        gun.bullets;
-        console.log("SPLAT");
+    }
+    public divide(numbers, quotient){
+        return numbers[0] / numbers[1];
     }
 }
-
-class RobotGun {
-    constructor (public bullets: number, public type: "auto" | "cats") {
- 
-    }
-}
-
-var meat = new Robot("plz daddy not the whip");
-meat.say();
-meat.shoot(new RobotGun(50, "cats"));
