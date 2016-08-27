@@ -1,0 +1,21 @@
+{
+  "name": "brat_server",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node ./dist/index.js"
+  },
+  "author": "Jack Thompson",
+  "license": "ISC",
+  "dependencies": {
+    "@types/body-parser": "0.0.31",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.31",
+    "@types/node": "^6.0.36",
+    "typescript": "^2.0.0"
+  }
+}
