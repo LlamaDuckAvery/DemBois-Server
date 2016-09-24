@@ -1,23 +1,34 @@
-var Robot = (function () {
-    function Robot(greet) {
-        this.greeting = greet;
+//<reference path="_all.d.ts"/>
+"use strict";
+var express = require("express");
+/**
+ * The server.
+ *
+ * @class Server
+ */
+var Server = (function () {
+    /**
+     * Constructor.
+     *
+     * @class Server
+     * @constructor
+     */
+    function Server() {
+        //create expressjs application
+        this.app = express();
+        //configure application
+        this.config();
     }
-    Robot.prototype.say = function () {
-        console.log(this.greeting);
+    /**
+     * Bootstrap the application.
+     *
+     * @class Server
+     * @method bootstrap
+     * @static
+     * @return {ng.auto.IInjectorService} Returns the newly created injector for this app.
+     */
+    Server.bootstrap = function () {
+        return new Server();
     };
-    Robot.prototype.shoot = function (gun) {
-        gun.bullets;
-        console.log("SPLAT");
-    };
-    return Robot;
+    return Server;
 }());
-var RobotGun = (function () {
-    function RobotGun(bullets, type) {
-        this.bullets = bullets;
-        this.type = type;
-    }
-    return RobotGun;
-}());
-var meat = new Robot("plz daddy not the whip");
-meat.say();
-meat.shoot(new RobotGun(50, "cats"));
