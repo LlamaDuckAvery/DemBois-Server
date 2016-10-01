@@ -1,2 +1,4 @@
 # DemBois-Server
-dank memes
+dank memes:
+(╯°□°）╯︵ ┻━┻)
+
